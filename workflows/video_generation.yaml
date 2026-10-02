@@ -1,0 +1,29 @@
+# Descriptive workflow for Codex, not a standalone execution engine.
+version: 2
+inputs:
+  required: [topic, duration]
+defaults:
+  language: zh-CN
+  width: 1920
+  height: 1080
+  fps: 30
+  audio: silent
+  style: warm-archive-documentary
+  engine: remotion
+workflow:
+  - environment_check
+  - engine_selection
+  - job_initialization
+  - production_prompt_generation
+  - source_grounded_script
+  - frame_budgeted_storyboard
+  - illustration_and_animation
+  - timeline_validation
+  - typecheck_and_keyframe_review
+  - full_video_render
+  - media_and_visual_verification
+  - deliver_mp4_srt_prompt_source_report
+completion:
+  require_existing_mp4: true
+  duration_tolerance_frames: 1
+  max_retries_per_stage: 2

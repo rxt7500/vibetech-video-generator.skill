@@ -1,0 +1,22 @@
+{
+  "name": "vibetech-video-job",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "compositions": "remotion compositions src/index.tsx",
+    "render": "remotion render src/index.tsx VibeTech --codec=h264 --pixel-format=yuv420p --color-space=bt709",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.530",
+    "remotion": "4.0.530",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "typescript": "5.7.3"
+  }
+}

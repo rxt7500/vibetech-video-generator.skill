@@ -1,0 +1,6 @@
+interface:
+  display_name: "VibeTech 视频生成"
+  short_description: "只需主题和时长，自动编写分镜与提示词，制作暖纸色档案风格视频并渲染验证 MP4"
+  default_prompt: "用 $vibetech-video-generator 生成一个 RAG 原理视频，时长 60 秒。"
+policy:
+  allow_implicit_invocation: true
